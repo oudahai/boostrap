@@ -1,0 +1,339 @@
+.page_por{
+    width: 100%;
+   .theme{
+       position: relative;
+    .apple_special{
+      position: absolute; 
+      width: 300px;
+      height: 150px;
+      left: 50px;
+      bottom: 0; 
+      z-index: 20;
+      text-align: center;
+      >h2,p{
+          color: #fff;
+      }
+      a{
+          color: blue;
+      }
+      @media(max-width:@screen-xs-max){
+         left: 45px; 
+         bottom: 0;
+      }
+    }
+   img{
+        width: 700px;
+        @media(max-width:@screen-xs-max){
+            width: 349px;
+        }
+    }
+   @media(max-width: @screen-xs-max){
+        .theme{
+      position: absolute;
+      left: 0;
+     }
+   }
+}
+}
+/*s栅格网的右边*/
+ .iPad {
+     height: 520px;
+     padding: 5px;
+     background: #999;
+     >.text-center{
+       >img{
+         width: 400px;  
+       }  
+     }
+    h3,p{
+         color: #000;
+     }
+     @media(max-width: @screen-xs-max) {
+        width: 100%;
+        >.text-center{
+       >img{
+         width: 300px;  
+       }  
+     }
+     }
+ }  
+
+/*自己加的样式，苹果居中*/
+.iphone{
+position: absolute;
+top:10px;
+left: 50%;
+color: #fff;
+font-size: 20px;
+cursor: pointer;
+&:hover{
+    color: #999;
+}
+     @media (min-width: @grid-float-breakpoint) {
+    display: none;
+  }
+}
+.container{
+    position: relative;
+    >.right-file{
+        position: absolute;
+        top:20px;
+        width: 20px;
+        height: 20px;
+        z-index: 20;
+//      background: red;
+        right: 10px;
+        text-align: center;
+        >a{
+            color: #fff;
+        }
+    }
+    >.right-file-button{
+    position: absolute;
+    top:55px;
+    right: 5px;
+    background: #fff;
+    width: 250px;
+    height: 400px;
+    z-index: 10;
+    display: none;
+    border: 1px solid #999;
+     @media (min-width: @grid-float-breakpoint) {
+       top:55px;
+       right: -100px; 
+      }/*左边导航条下拉框*/
+     >p{
+         text-align: center;
+         margin: 25px 0;
+         
+     }
+     >ul li{
+        list-style: none;
+        height: 50px;
+        padding-top: 15px;
+        border-top: 1px solid #eee;
+        >a{
+        color: blue;
+        >span{
+            margin-right: 10px;
+        }
+       }
+     }
+    }
+/*上三角形*/
+>.triangle{
+position: absolute;
+right: 5px;
+top:-4px;
+width:20px;
+height: 60px;
+border-left: 10px solid transparent;
+border-right: 10px solid transparent;
+border-bottom: 10px solid #fff;
+ z-index: 11;
+ display: none;
+ }
+}
+/*点击移动图*/
+.main{
+height: 2600px;
+background: #eee;
+position: relative;
+@media (max-width: @grid-float-breakpoint){
+   height: 2850px; 
+}
+ /*左右指示器*/
+ .olleft{
+     position: absolute;
+     top:0;
+     left: 0;
+     z-index: 2;
+     width: 30px;
+      height: 128px;
+      background:#eee;
+       text-align: center;
+      padding-top: 50px;
+      border-right: 1px solid #999;
+       cursor: pointer;
+       display: none;
+//       @media (min-width: @grid-float-breakpoint){
+//             display: none;
+//           }  
+    }
+             /*右指示器*/
+     .olright{
+             display: none;
+               @media (max-width: @grid-float-breakpoint){
+               display: block;
+                position: absolute;
+                position: absolute;
+                 top:0;
+                right: 0;
+                 z-index: 2;
+                 width: 30px;
+                 height: 128px;
+                 background: #eee;
+                 text-align: center;
+                padding-top: 50px;
+                 border-left: 1px solid #999;
+                 cursor: pointer;
+               
+             }
+           }                
+    >.conner{
+        height: 140px;
+       width: 100%;
+       overflow: hidden;
+            >ul
+             {
+                 height: 125px;
+                background: red;
+                overflow: hidden;
+                >li{
+                    margin-left: 30px;
+                    list-style: none;
+                   float: left;
+                 >span{
+                     color: red;
+                 }
+                 >a{
+                     color: #000;
+                     text-decoration: none;
+                 img{
+                    width: 30px; 
+                  } 
+                  p{
+                    text-align: center;  
+                  }&:hover{
+                  color: blue;  
+                  } 
+                } 
+              }
+              @media (max-width: @grid-float-breakpoint) {
+              position: absolute;
+              top:0;
+              left: 0;
+          }         
+        }
+    }
+}
+/*详情*/
+.youhui,.design{
+    width: 100%;
+    height:250px;
+    background:#eee;
+    margin-top: 2px;
+    text-align: center;
+//  overflow: hidden;
+    padding: 20px 0;
+    img{
+        width: 600px;
+        @media (max-width: @grid-float-breakpoint){
+            width: 300px;
+        }
+    }
+    p>a{
+        color: #0086B3;
+    }
+}
+/*折叠面板部分*/
+#datalist{
+//  background: red;
+    padding: 15px 0;
+    border-top: 1px solid #eee;
+    >div{
+        float: left;
+        ul>li{
+            list-style: none;
+        }
+    }
+    >div:first-child~div{
+        margin-right: 70px;
+    }
+     @media (max-width: @grid-float-breakpoint){
+            display: none;
+        }
+}
+.fold_data{
+    display: none;
+    a{
+        text-decoration: none;
+        color: #000;
+    }
+   @media (max-width: @grid-float-breakpoint){
+            display: block;
+        } 
+}
+//底部
+.footer_con{
+    font-size: 15px;
+    .line{
+        margin-bottom: 10px;
+        border-bottom: 1px solid #eee;
+    }
+}
+#a_style{
+    a{
+        margin-right: 15px;
+        color: #000;
+        text-decoration:none;
+        &:hover{
+           color: #0000FF; 
+        }
+    }
+     @media (max-width: @grid-float-breakpoint){
+            display: none;
+        } 
+}
+ .border_bottom{
+     border-bottom: 1px solid #999; 
+     padding-top: 5px;
+//   position: relative;
+    .leftLogoWenzi{
+        padding: 0;
+    }
+    .wenziTop{
+        padding-top: 10px;
+    }
+    .arrowdown{
+        width: 20px;
+        height: 20px;
+       float: right;
+       cursor: pointer;
+       border: 1px solid transparent;
+      padding: 0;
+      margin: 0;
+        @media (max-width: @grid-float-breakpoint){
+            display: none;
+        } 
+     &:hover{
+         background:none;
+     }
+    }
+    /*三角按钮下拉*/
+   .arrange{
+//     display: none;
+       @media (max-width: @grid-float-breakpoint){
+           display: none;
+            width: 100%;
+            height: 240px;
+            background: #fff; 
+            position: absolute;
+            top:45px;
+            left:0;
+            border-bottom:1px solid #eee;
+            li{
+              line-height: 35px;
+            list-style: none;
+            border-bottom: 1px solid #eee;
+            >a{
+              color: #000000;  
+             text-decoration: none;
+             &:hover{
+                 color: #0000FF;
+             }
+            }
+          }
+        }  
+     }
+ }

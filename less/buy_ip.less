@@ -1,0 +1,255 @@
+//第二张详情开始
+.boxLogo{ 
+    width: 100%;
+    height: 1450px;
+//  background: pink; 
+//  position: absolute;
+#boxLogo{
+    position: relative;
+    height: 1400px;
+//background: red;
+position: relative;
+  margin: 0 auto;
+  width: 1200px;
+}
+.Logoleft{
+    float: left;
+    width: 600px;
+    height: 800px;
+//  background-color: yellow;
+    text-align: center;
+  >ul>li{
+      float: left;
+      list-style: none;
+      padding: 20px 50px;
+  } 
+}
+.Logoright{
+    float: right;
+     @media(max-width:760px){
+      position: absolute;
+     right: 0;
+     top:0;
+}
+.Logodetails{
+    width: 500px;
+    height: 1400px;
+//  background: yellow;
+    padding: 10px 5px;
+    >.yes_discount{
+        width: 100%;
+        height: 80px;
+        border: 1px solid #eee;
+        margin-top: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        &:hover{
+            border: 1px solid #999;
+        }
+        &:focus{
+            border: 2px solid #0000FF;
+        }
+        >p{
+           padding-top: 30px;
+           font-size: 15px;
+           >b{
+               display: inline-block;
+               width: 200px;
+           }
+        }
+    }
+    .rule{
+        width: 100%;
+        height: 2px;
+        margin-top: 20px;
+        border-bottom: 1px solid #eee;
+    }
+ 
+  }
+
+}
+}
+/*下拉框中的*/
+.choose_ip{
+    width: 400px;
+    height: 60px;
+   background-color: #fff;
+   margin: 5px auto;
+   position: relative;
+   >p{
+      padding: 0 5px; 
+      
+   }
+   >span{
+       position: absolute;
+       top:20px;
+       right:12px;
+       width: 40px;
+       height: 40px;
+   }
+   >.popUpBox{
+       position: absolute;
+       bottom: 63px;
+       left: 0;
+       width: 100%;
+       height: 350px;
+       z-index: 10;
+       background: #fff;
+       border: 1px solid #0000FF;
+       display: none;
+       ul{width: 100%;
+         padding: 0 4px;
+       >li{
+           list-style: none;
+           line-height: 20px;
+           padding-left: 10px;
+           &:hover{
+               width: 100%;
+               background-color: #0000FF;
+           }
+           >a{
+               font-size: 15px;
+               color: #000;
+               text-decoration: none;
+               &:hover{
+                   color: #fff;
+               }
+           }
+       }
+    }
+   }
+}
+/*外观开始*/
+.facde{
+    >a
+    >span{
+        display: inline-block;
+        width: 230px;
+        height: 110px;
+//      background: orange;
+        border-radius: 5px;
+        text-align: center;
+        padding:5px 0;
+        margin-right: 10px;
+        margin-top: 10px;
+        border:1px solid #eee;
+        color: #000;   
+        &:hover{
+          border: 1px solid #999;  
+        }
+        >img{
+            width: 50px;
+        }
+    }
+}
+.expect{
+    width: 100%;
+    height: 300px;
+    background:#eee;
+    margin: 15px 0;
+    padding: 10px 15px;
+    position: relative;
+    >a{
+        color: #0000FF;
+    }
+    >button{
+        width: 400px;
+        background-color: #0000FF;
+        height: 50px;
+        color: #fff;
+        border-radius: 5px;
+        border: none;
+    }
+    >a>span{
+        font-size: 20px;
+        color: red;
+        width: 30px;
+        height: 30px;
+        padding: 0 10px;
+    }
+    >ul{
+        position: absolute;
+        top:40px;
+        right: 0;
+        width: 190px;
+        height: 50px;
+        z-index: 20;
+        padding-top: 13px;
+     background-color: #fff;
+   border: 1px solid #000;
+   display: none;
+    }
+    >#triangleDown{
+        position: absolute;
+        top:89px;
+        right: 50px;
+        width: 20px;
+        z-index: 21;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 30px solid #fff;
+    display: none;
+    }
+}
+/*轮播图*/
+.conveyor{
+    width: 100%;
+//  height: 1180px;
+// background-color: yellow;
+   img{
+       width: 100%;
+      height:200px;
+      @media(min-width:670px){
+      height:400px;
+      }
+      
+   }
+}
+//商品选择
+.compareiPhone{ 
+    text-align: center;
+    width:100%;
+    height: 402px;
+    background-color: #eee;
+    border-bottom: 1px solid #999;
+    margin-bottom: 10px;
+img{
+    float: left; 
+  padding: 60px 40px;
+}  
+//
+.imgesHead{
+    height: 400px;
+    width: 1100px;
+  padding-top: 100px;
+    >p>a{
+        color: #0000FF;
+    }
+   }
+}
+/*底部弹出框*/
+.panelHeight{
+    height: 80px;
+//  width: 1100px;
+overflow: hidden;
+    padding-top: 23px;
+
+    a{
+        text-decoration: none;
+        font-size: 30px;
+        >b{
+          display: inline-block;  
+          width: 900px;
+        }
+    }
+}
+.contentPoPDown{
+    >p{
+        text-align: center;
+        margin: 15px 10px;
+        span{
+            margin-right: 130px;
+        }
+    }
+}
