@@ -26,12 +26,27 @@ var	key=0;
 	/*折叠面板部分*/
 	$(".switch").click(function(){
 		$(this).next().slideToggle();
+		key++;
+		if(key%2==0){
+			$(this).find("span").css({
+			"transform": "rotate(0deg)",
+			"transition": "0.5s",
+		  })
+		}
+		else{
+			$(this).find("span").css({
+			"transform": "rotate(45deg)",
+			"transition": "0.5s",
+		  })
+		}
+		
+		
 	})
 	/*第二张开始*/
 
 	 $(window).scroll(function () {
 var a= Math.ceil($(window).scrollTop());
-console.log(a);
+//console.log(a);
      if(a<50){
     $(".border_bottom").removeClass("navbar-fixed-top");
     $(".arrowdown").css("display","none");
